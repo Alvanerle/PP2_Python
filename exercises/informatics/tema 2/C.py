@@ -1,4 +1,7 @@
-a = int(input())
+x = int(input())
 
-print("The next number for the number " + str(a) + " is " + str(a + 1) + ".")
-print("The previous number for the number " + str(a) + " is " + str(a - 1) + ".")
+a = "The next number for the number {} is {}."
+b = "The previous number for the number {} is {}."
+
+print(a.format(x, x + 1))
+print(b.format(x, x - 1))
