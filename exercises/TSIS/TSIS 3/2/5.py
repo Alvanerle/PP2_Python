@@ -15,3 +15,5 @@ for key, value in d.items():
     if value == s:
         print(key)
         exit()
+
+        
