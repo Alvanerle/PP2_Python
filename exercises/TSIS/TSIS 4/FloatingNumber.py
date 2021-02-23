@@ -1,0 +1,11 @@
+Pattern = r"^[+-]?\d*\.\d+$"
+
+import re 
+t = int(input())
+
+for i in range(t):
+    s = input()
+    if bool(re.search(Pattern, s)):
+        print("True")
+    else:
+        print("False")
