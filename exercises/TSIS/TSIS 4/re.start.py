@@ -4,7 +4,11 @@ s = input()
 k = input()
 
 pattern = re.compile(k)
-matches = pattern.finditer(s)
+find = pattern.search(s)
 
-for match in matches:
-    print(match)
+if not find:
+    print('(-1, -1)')
+else:
+    while find:
+        print("({}, {})".format(find.start(), find.end() - 1))
+        find = pattern.search(s, find.start() + 1)
