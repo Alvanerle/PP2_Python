@@ -10,7 +10,7 @@ def rename_():
     print(os.listdir(curr_dir()))
     old_name = input('Choose directory or file: ')
     new_name = input('Enter new name of this directory or file: ')
-    if old_name in os.listdir(currDir()):
+    if old_name in os.listdir(curr_dir()):
         os.rename(old_name, new_name)
     else:
         print('Error!')
