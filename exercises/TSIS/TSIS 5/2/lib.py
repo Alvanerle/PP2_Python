@@ -106,5 +106,3 @@ def actionsForFiles():
     print('4: rewrite content of this file')
     print('5: return to the parent directory')
     print('Enter any text to exit')
-
-
